@@ -29,6 +29,9 @@
   .contact{margin-top:12px; display:flex; flex-wrap:wrap; gap:8px 14px; font-size:13.5px}
   .contact a,.contact span{display:inline-flex; align-items:center; gap:5px; color:var(--ink)}
   .summary{margin:16px 0 0; color:var(--muted); font-size:14px; border-top:1px solid var(--line); padding-top:14px}
+  .metrics{margin-top:12px; font-size:12.5px; color:var(--ink); background:var(--chip);
+    border:1px solid var(--line); border-radius:8px; padding:7px 12px; display:inline-block}
+  .summary b{color:var(--ink)}
   section{background:var(--panel); border:1px solid var(--line); border-radius:16px;
     padding:20px 26px; margin-bottom:18px}
   h2{font-size:13px; letter-spacing:1.2px; text-transform:uppercase; color:var(--accent);
@@ -79,10 +82,14 @@
       <a href="https://github.com/mureds">💻 github.com/mureds</a>
     </div>
     <p class="summary">
-      원자 수준의 물리적 이해를 실제 소재 설계로 연결하는 전산재료과학자입니다. 제일원리 계산(DFT),
-      머신러닝 원자간 포텐셜(MLIP), 고처리량 스크리닝을 결합한 멀티스케일 파이프라인으로 합금·계면·이차전지 소재를 연구합니다.<br>
-      <span class="small">A computational materials scientist bridging atomic-scale understanding and materials design, using DFT, machine-learning interatomic potentials (MLIP), and high-throughput screening across scales.</span>
+      원자 수준의 물리적 이해를 실제 소재 설계로 연결하는 전산재료과학자입니다. 제일원리 계산(DFT)과
+      <b>SevenNet·MACE 기반 머신러닝 원자간 포텐셜(MLIP)</b>, 고처리량 스크리닝을 결합해 합금·계면·이차전지 소재를 연구하며,
+      <b>KISTI 뉴런(Neuron) GPU 클러스터</b>에서 수천–수만 원자 규모의 나노 계면 시뮬레이션을 수행합니다.<br>
+      <span class="small">A computational materials scientist bridging the atomic scale and materials design — building
+      <b>SevenNet / MACE machine-learning interatomic potential (MLIP)</b> pipelines together with DFT and high-throughput
+      screening, and running thousand-to-ten-thousand-atom interface simulations on the <b>KISTI Neuron GPU cluster</b>.</span>
     </p>
+    <div class="metrics">📊 Google Scholar (2026-07): Citations <b>266</b> · h-index <b>7</b> · i10-index <b>7</b></div>
   </header>
 
   <section>
@@ -147,10 +154,18 @@
   </section>
 
   <section>
+    <h2>Preprints <span class="ko">/ 프리프린트</span></h2>
+    <ol class="pubs">
+      <li>A. F. Wani, <span class="me">I.-S. Jeong</span>, H. Jeon, J. Kim, S. D. Park, E.-A. Choi, S. Z. Han <i>et al.</i>, “Precipitate phase selection and grain boundary morphology in Cu-Ni-Si-Mn alloys: A machine-learning interatomic potential study,” <i>arXiv</i>:2606.09023 (2026).<a class="doi" href="https://arxiv.org/abs/2606.09023" target="_blank" rel="noopener">🔗 arXiv</a></li>
+    </ol>
+  </section>
+
+  <section>
     <h2>Conference Presentations <span class="ko">/ 학회 발표</span></h2>
     <ul class="plain small">
       <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Polysulfide-Driven Self-Assembly of Heterostructured Interphases in Lithium-Alloy Anodes for Durable Li–S Batteries,” <b>iHSM3</b> (3rd Int’l Conf. on Heterostructured Materials), Busan, Korea (2026) <span class="muted">[oral]</span></li>
       <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Atomistic Insights into Alloying Effects on Polysulfide-Induced Degradation of Li–S Anodes,” <b>PRICM12</b>, Brisbane, Australia (2026) <span class="muted">[scheduled]</span></li>
+      <li>B. Ryu, <span class="me">I.-S. Jeong</span>, S. Z. Han, E.-A. Choi, “Predicting incoherent interface structures in Cu–Ni–Si-Mn alloys using machine-learning interatomic potentials,” <b>APS Global Physics Summit</b> (2026)</li>
       <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Alloy Anodes Forming Nano-Interphases to Mitigate Polysulfide Corrosion,” <b>RQ2026</b>, Busan, Korea (2026) <span class="muted">[scheduled]</span></li>
       <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Computational Study of Alloy Anodes Mitigating Polysulfide Corrosion in Li–S Batteries,” <b>JIM</b>, Sapporo, Japan (2025) <span class="muted">[oral]</span></li>
       <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “First-Principles-Aided Design of High-Strength Cu-Ni-Si Alloy with Grain-Boundary Phases,” <b>MMM11</b>, Prague, Czech Republic (2024) <span class="muted">[oral]</span></li>
@@ -182,9 +197,9 @@
     <h2>Skills <span class="ko">/ 역량</span></h2>
     <div class="grid2 small">
       <div><b>First-principles</b><br><span class="muted">VASP, Quantum ESPRESSO, DFT, SQS, phonons</span></div>
-      <div><b>MLIP / MD</b><br><span class="muted">SevenNet, MACE, M3GNet, CHGNet; LAMMPS/ASE</span></div>
+      <div><b>MLIP / MD</b><br><span class="muted"><b style="color:var(--accent2)">SevenNet</b>, MACE, M3GNet, CHGNet · large-scale MD (LAMMPS / ASE)</span></div>
       <div><b>Analysis</b><br><span class="muted">ELF, DDEC6 bond order, PDOS, Pymatgen</span></div>
-      <div><b>Computing</b><br><span class="muted">Python, SLURM/HPC (KISTI Neuron GPU), automation pipelines, data viz</span></div>
+      <div><b>HPC / Computing</b><br><span class="muted"><b style="color:var(--accent2)">KISTI Neuron GPU cluster</b>, SLURM, Python, automation pipelines</span></div>
     </div>
   </section>
 
