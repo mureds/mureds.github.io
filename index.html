@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Il-Seok Jeong (정일석) — Curriculum Vitae</title>
+<meta name="description" content="Il-Seok Jeong (정일석) — Computational Materials Scientist, KIMS. DFT · MLIP · high-throughput alloy & interface design." />
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1c2430; --muted:#5b6675; --line:#e4e8ee;
+    --accent:#2a6df4; --accent2:#0f9d76; --chip:#eef2f8; --hi:#fff6da;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0f131a; --panel:#161c26; --ink:#e6ebf2; --muted:#95a1b3; --line:#26303d;
+           --accent:#6ea8fe; --accent2:#4fd1a5; --chip:#1d2632; --hi:#3a331a; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg); color:var(--ink);
+    font:15px/1.7 -apple-system,"Segoe UI",Roboto,"Noto Sans KR",sans-serif;}
+  a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:880px; margin:0 auto; padding:34px 22px 70px}
+  header.cv{background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:26px 28px; margin-bottom:22px}
+  h1{margin:0; font-size:29px; letter-spacing:.2px}
+  h1 .ko{font-size:19px; color:var(--muted); font-weight:600; margin-left:8px}
+  .role{margin:6px 0 2px; font-size:15.5px; color:var(--accent2); font-weight:600}
+  .affil{color:var(--muted); font-size:14px}
+  .contact{margin-top:12px; display:flex; flex-wrap:wrap; gap:8px 14px; font-size:13.5px}
+  .contact a,.contact span{display:inline-flex; align-items:center; gap:5px; color:var(--ink)}
+  .summary{margin:16px 0 0; color:var(--muted); font-size:14px; border-top:1px solid var(--line); padding-top:14px}
+  section{background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:20px 26px; margin-bottom:18px}
+  h2{font-size:13px; letter-spacing:1.2px; text-transform:uppercase; color:var(--accent);
+    margin:0 0 14px; border-bottom:2px solid var(--line); padding-bottom:8px}
+  h2 .ko{color:var(--muted); font-weight:600; letter-spacing:0; text-transform:none; font-size:12.5px}
+  .item{margin:0 0 14px} .item:last-child{margin-bottom:0}
+  .row{display:flex; justify-content:space-between; gap:12px; align-items:baseline}
+  .row .t{font-weight:600} .row .d{color:var(--muted); font-size:13px; white-space:nowrap}
+  .sub{color:var(--muted); font-size:13.5px; margin-top:2px}
+  ol.pubs{margin:0; padding-left:22px} ol.pubs li{margin:0 0 11px}
+  .me{ text-decoration:underline; text-underline-offset:2px }
+  .tag{background:var(--chip); border:1px solid var(--line); border-radius:20px;
+    padding:2px 10px; font-size:12.5px; color:var(--ink); display:inline-block; margin:3px 4px 3px 0}
+  .badge{background:var(--hi); border-radius:5px; padding:0 6px; font-size:11.5px; font-weight:600}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:6px 22px}
+  .muted{color:var(--muted)} .small{font-size:12.5px}
+  ul.plain{margin:6px 0 0; padding-left:18px} ul.plain li{margin:3px 0}
+  .proj{display:flex; gap:10px; align-items:baseline; margin:8px 0}
+  .proj .lk{font-size:12.5px}
+  footer{color:var(--muted); font-size:12px; text-align:center; margin-top:20px}
+  .toolbar{display:flex; justify-content:flex-end; gap:8px; margin-bottom:10px}
+  .toolbar button{background:var(--panel); border:1px solid var(--line); color:var(--ink);
+    border-radius:8px; padding:6px 12px; font-size:12.5px; cursor:pointer}
+  @media print{
+    :root{--bg:#fff;--panel:#fff;--line:#ccc;--ink:#000;--muted:#444;--chip:#eee;--hi:#ffe}
+    body{font-size:11pt} .wrap{max-width:none;padding:0} .toolbar{display:none}
+    section,header.cv{border:none;border-radius:0;padding:6px 0;margin:0 0 8px;break-inside:avoid}
+    h2{break-after:avoid}
+  }
+  @media (max-width:640px){ .grid2{grid-template-columns:1fr} h1{font-size:24px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="toolbar"><button onclick="window.print()">🖨️ 인쇄 / PDF 저장</button></div>
+
+  <header class="cv">
+    <h1>Il-Seok Jeong<span class="ko">정일석</span></h1>
+    <div class="role">Computational Materials Scientist · 전산재료과학자</div>
+    <div class="affil">Postdoctoral Researcher (Senior Researcher), Korea Institute of Materials Science (KIMS), Changwon, Korea<br>
+      한국재료연구원(KIMS) 박사후연구원 · 선임연구원</div>
+    <div class="contact">
+      <a href="mailto:mureds@kims.re.kr">✉️ mureds@kims.re.kr</a>
+      <a href="https://orcid.org/0000-0002-8196-3612">🆔 ORCID 0000-0002-8196-3612</a>
+      <a href="https://github.com/mureds">💻 github.com/mureds</a>
+    </div>
+    <p class="summary">
+      원자 수준의 물리적 이해를 실제 소재 설계로 연결하는 전산재료과학자입니다. 제일원리 계산(DFT),
+      머신러닝 원자간 포텐셜(MLIP), 고처리량 스크리닝을 결합한 멀티스케일 파이프라인으로 합금·계면·이차전지 소재를 연구합니다.<br>
+      <span class="small">A computational materials scientist bridging atomic-scale understanding and materials design, using DFT, machine-learning interatomic potentials (MLIP), and high-throughput screening across scales.</span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Research Interests <span class="ko">/ 연구 분야</span></h2>
+    <div>
+      <span class="tag">First-principles (DFT)</span>
+      <span class="tag">Machine-learning potentials (SevenNet · MACE · M3GNet)</span>
+      <span class="tag">High-throughput screening</span>
+      <span class="tag">Interface & heterostructure energetics</span>
+      <span class="tag">Alloy design (HEA · Cu-Ni-Si · Al-Zn)</span>
+      <span class="tag">Li–S batteries</span>
+      <span class="tag">Multiscale MD</span>
+      <span class="tag">Electronic-structure analysis (ELF · DDEC6)</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education <span class="ko">/ 학력</span></h2>
+    <div class="item">
+      <div class="row"><span class="t">Ph.D., Materials Science and Engineering</span><span class="d">~ 2023</span></div>
+      <div class="sub">Gwangju Institute of Science and Technology (GIST) · Computational Materials Science Lab (Adv. J.-H. Lee)<br>광주과학기술원(GIST) 신소재공학부 — 전산재료과학연구실</div>
+    </div>
+    <div class="item">
+      <div class="row"><span class="t">M.S., Materials Science and Engineering</span><span class="d">20XX</span></div>
+      <div class="sub">Gwangju Institute of Science and Technology (GIST) · 광주과학기술원(GIST)</div>
+    </div>
+    <div class="item">
+      <div class="row"><span class="t">B.S., Nano-system Engineering (Minor: Physics)</span><span class="d">20XX</span></div>
+      <div class="sub">Gachon University · 가천대학교 나노시스템전공 (물리학 부전공)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience <span class="ko">/ 경력</span></h2>
+    <div class="item">
+      <div class="row"><span class="t">Postdoctoral Researcher (Senior Researcher)</span><span class="d">2024.06 – present</span></div>
+      <div class="sub">Extreme Materials Research Institute, KIMS · 한국재료연구원 극한재료연구소</div>
+    </div>
+    <div class="item">
+      <div class="row"><span class="t">Postdoctoral Researcher (Senior Researcher)</span><span class="d">2023.06 – 2024.05</span></div>
+      <div class="sub">Special Alloys Research Group, KIMS · 한국재료연구원 특수합금연구실</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Journal Publications <span class="ko">/ 논문 (12편)</span></h2>
+    <p class="small muted" style="margin-top:-6px"><span class="me">Underline</span> = author. † Equal contribution · * Corresponding author.</p>
+    <div class="sub" style="font-weight:600;margin:6px 0 4px">First / Co-first Author · 주저자</div>
+    <ol class="pubs">
+      <li><span class="me">I.-S. Jeong</span>, H. Kato, B. Ryu, E.-A. Choi*, S. Z. Han*, “Atomic-scale mechanism of alloy anodes mitigating polysulfide-induced degradation in lithium–sulfur batteries,” <i>J. Mater. Chem. A</i> <b>14</b>, 17079–17094 (2026). <span class="badge">Back Cover</span></li>
+      <li>S. Z. Han†, <span class="me">I.-S. Jeong</span>†, H. Kato, E.-A. Choi* (†equal), “Enhanced corrosion resistance through the synergistic effect of Cu₂O oxide layers and fatty acids,” <i>J. Mater. Res. Technol.</i> <b>38</b>, 4806–4815 (2025).</li>
+      <li><span class="me">I.-S. Jeong</span>, J.-H. Lee*, “Single-phase lightweight high-entropy alloys with enhanced mechanical properties,” <i>Mater. Des.</i> <b>227</b>, 111709 (2023).</li>
+      <li><span class="me">I.-S. Jeong</span>†, E. G. Ahn†, J.-H. Lee* (†equal), “Bond strengthening in lateral heterostructures of transition metal dichalcogenides,” <i>Phys. Rev. B</i> <b>102</b>, 075441 (2020).</li>
+    </ol>
+    <div class="sub" style="font-weight:600;margin:12px 0 4px">Co-author · 공동저자</div>
+    <ol class="pubs" start="5">
+      <li>S. Z. Han*, B. Ryu, <span class="me">I.-S. Jeong</span>, S. H. Lim, E.-A. Choi*, “Simultaneous enhancement of strength and ductility in Al-Zn-Cu casting alloy with trace Mg addition designed by first principle calculation,” <i>Mater. Des.</i> <b>244</b>, 113140 (2024).</li>
+      <li>S. Z. Han*, <span class="me">I.-S. Jeong</span>, B. Ryu*, S. J. Lee, J. H. Ahn, E.-A. Choi*, “Enhanced strength of Cu-Ni-Si alloy via heterogeneous nucleation at grain boundaries during homogenization,” <i>Mater. Charact.</i> <b>215</b>, 114198 (2024).</li>
+      <li>S. Z. Han*, B. Ryu, <span class="me">I.-S. Jeong</span>, S. H. Lim, E.-A. Choi*, “Increasing ductility beyond post-uniform deformation through Zn lamellae deformation in Al at room temperature,” <i>Heliyon</i> <b>10</b>, e34984 (2024).</li>
+      <li>J. S. Park, D.-W. Kim, <span class="me">I.-S. Jeong</span>, E.-A. Choi, S. H. Kwon*, S. Z. Han*, “Effect of gas pressure on the oxidation behavior of Cu and Cu alloys,” <i>Korean J. Met. Mater.</i> <b>63</b>(2), 85–94 (2025).</li>
+      <li>W. S. Kim, G. Anoop, <span class="me">I.-S. Jeong</span>, <i>et al.</i>, J. Y. Jo*, “Feasible tuning of barrier energy in PEDOT:PSS/Bi₂Te₃ nanowire thermoelectric nanocomposite films via polar solvent vapor annealing,” <i>Nano Energy</i> <b>67</b>, 104207 (2020).</li>
+      <li>M.-W. Kim, <i>et al.</i>, <span class="me">I.-S. Jeong</span>, <i>et al.</i>, K. Lee*, B.-J. Kim*, “Reversible polymorphic transition and hysteresis-driven phase selectivity in single-crystalline C8-BTBT rods,” <i>Small</i> <b>16</b>, 1906109 (2020).</li>
+      <li>J. Lee, K. S. Choi, T. K. Lee, <span class="me">I.-S. Jeong</span>, <i>et al.</i>, T. H. Kim*, S. Lee*, “Non-stoichiometry-induced metal-to-insulator transition in nickelate thin films by PLD,” <i>Curr. Appl. Phys.</i> <b>19</b>(3), 289–293 (2019).</li>
+      <li>S. Seo, J.-H. Kang, M. J. Oh, <span class="me">I.-S. Jeong</span>, <i>et al.</i>, C.-B. Eom, S. Lee*, “Origin of the emergence of higher Tc than bulk in iron chalcogenide thin films,” <i>Sci. Rep.</i> <b>7</b>, 9994 (2017).</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Conference Presentations <span class="ko">/ 학회 발표</span></h2>
+    <ul class="plain small">
+      <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Suppression of Polysulfide-Driven Anode Corrosion Through Li Alloying in Li–S Battery,” <b>MMM12</b>, Jeju, Korea (2026) <span class="muted">[scheduled]</span></li>
+      <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Atomistic Insights into Alloying Effects on Polysulfide-Induced Degradation of Li–S Anodes,” <b>PRICM12</b>, Brisbane, Australia (2026) <span class="muted">[scheduled]</span></li>
+      <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Alloy Anodes Forming Nano-Interphases to Mitigate Polysulfide Corrosion,” <b>RQ2026</b>, Busan, Korea (2026) <span class="muted">[scheduled]</span></li>
+      <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Computational Study of Alloy Anodes Mitigating Polysulfide Corrosion in Li–S Batteries,” <b>JIM</b>, Sapporo, Japan (2025) <span class="muted">[oral]</span></li>
+      <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “First-Principles-Aided Design of High-Strength Cu-Ni-Si Alloy with Grain-Boundary Phases,” <b>MMM11</b>, Prague, Czech Republic (2024) <span class="muted">[oral]</span></li>
+      <li><span class="me">I.-S. Jeong</span> <i>et al.</i>, “Combined DFT and ML Exploration of Alloying the Li Metal Anode,” <b>NanoKorea 2024</b>, Goyang, Korea (2024)</li>
+      <li><span class="me">I.-S. Jeong</span>, J.-H. Lee, “Computational design of single-phase lightweight high-entropy alloys,” <b>KIM Fall Conf.</b>, Korea (2023) <span class="muted">[Oral Presentation Award]</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Awards &amp; Honors <span class="ko">/ 수상</span></h2>
+    <ul class="plain">
+      <li>Outside Back Cover, <i>Journal of Materials Chemistry A</i> (RSC) — 2026</li>
+      <li>Oral Presentation Award, KIM Fall Conference — 2023</li>
+      <li>Dean’s Award, School of Materials Science and Engineering, GIST — 2023</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Research Grants <span class="ko">/ 참여 과제</span></h2>
+    <ul class="plain small">
+      <li>Strengthening by stable heterogeneous phases in metals — MSIT/NRF, 2024–2026 (PI: S. Z. Han)</li>
+      <li>Antiviral/antibacterial metal material technology — MSIT/KIMS, 2023–2025 (PI: S. Z. Han)</li>
+      <li>Next-generation Li foil for secondary batteries — MOTIE, 2024 (PI: H. T. Jeong)</li>
+      <li>Electrochemical compressor heat-pump system — MOTIE, 2021–2023 (PI: Y. Kim / S. H. Yoon)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills <span class="ko">/ 역량</span></h2>
+    <div class="grid2 small">
+      <div><b>First-principles</b><br><span class="muted">VASP, Quantum ESPRESSO, DFT, SQS, phonons</span></div>
+      <div><b>MLIP / MD</b><br><span class="muted">SevenNet, MACE, M3GNet, CHGNet; LAMMPS/ASE</span></div>
+      <div><b>Analysis</b><br><span class="muted">ELF, DDEC6 bond order, PDOS, Pymatgen</span></div>
+      <div><b>Computing</b><br><span class="muted">Python, SLURM/HPC (KISTI Neuron GPU), automation pipelines, data viz</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Open-Source / Interactive Tools <span class="ko">/ 시각화 도구</span></h2>
+    <div class="proj">
+      <div><b>Cu // Cu₆Sn₅ CSL Interface Visualizer</b> — 2D/3D 계면 방위관계·CSL 동적 시각화 (임의 격자·HCP)<br>
+        <span class="lk"><a href="https://mureds.github.io/csl_cu_cu6sn5/">site</a> · <a href="https://github.com/mureds/csl_cu_cu6sn5">code</a></span></div>
+    </div>
+    <div class="proj">
+      <div><b>Cu // G-phase CSL Interface Visualizer</b> — 금속//G-phase 계면 CSL/근사일치 시각화<br>
+        <span class="lk"><a href="https://mureds.github.io/csl_cu_g/">site</a> · <a href="https://github.com/mureds/csl_cu_g">code</a></span></div>
+    </div>
+  </section>
+
+  <footer>Last updated: 2026-07-24 · Built as a static GitHub Pages site.</footer>
+</div>
+</body>
+</html>
